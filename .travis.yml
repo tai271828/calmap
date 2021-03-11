@@ -8,7 +8,9 @@ python:
 install:
 - which python; which pip
 - pip list
-- pip install -r tests/requirements.txt -r doc/requirements.txt
+- pip install -r tests/requirements.txt
+- pip list
+- pip install -r doc/requirements.txt
 - pip list
 - pip install -e .
 - pip list
