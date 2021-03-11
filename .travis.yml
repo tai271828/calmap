@@ -8,8 +8,12 @@ python:
 - '3.7'
 - '3.8'
 install:
+- which python; which pip
+- pip list
 - pip install -r tests/requirements.txt -r doc/requirements.txt
+- pip list
 - pip install -e .
+- pip list
 script:
 - pytest --cov=calmap
 - pushd doc && make html && popd
