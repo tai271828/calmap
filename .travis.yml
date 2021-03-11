@@ -4,7 +4,7 @@ python:
 - '3.7'
 - '3.8'
 install:
-- apt-get install tree
+- sudo apt-get install tree
 - which python; which pip
 - tree $HOME/.cache/pip
 - pip list
