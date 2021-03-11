@@ -6,7 +6,7 @@ python:
 - '3.8'
 install:
 - which python; which pip
-- cat $HOME/.cache/pip
+- ls $HOME/.cache/pip
 - pip list
 - pip install -r tests/requirements.txt
 - pip list
